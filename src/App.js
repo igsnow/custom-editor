@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
 import LikeButton from './component/count'
-import TEditor from "./component/teditor";
+import SEditor from "./component/seditor";
 
 function App() {
     return (
         <div className="App">
             <header>
                 <LikeButton/>
-                <TEditor/>
+                <SEditor/>
             </header>
         </div>
     );
