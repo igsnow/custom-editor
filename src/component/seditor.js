@@ -12,7 +12,10 @@ const SEditor = () => {
     ])
     return (
         <Slate editor={editor} value={value} onChange={value => setValue(value)}>
-            <Editable/>
+            <Editable
+                onKeyDown={event => {
+                    console.log(event.key)
+                }}/>
         </Slate>
     )
 }
