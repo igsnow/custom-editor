@@ -1,12 +1,12 @@
 import React from 'react';
 import LikeButton from './component/count'
-import ImagesExample from "./component/seditor";
+import EditorDemo from "./component/beditor";
 
 function App() {
     return (
         <>
             <LikeButton/>
-            <ImagesExample/>
+            <EditorDemo/>
         </>
     );
 }
