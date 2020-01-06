@@ -3,7 +3,6 @@ import CKEditor from '@ckeditor/ckeditor5-react'
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import '@ckeditor/ckeditor5-build-classic/build/translations/zh-cn';
 
-
 const editorConfiguration = {
     toolbar: [
         "heading",
@@ -25,7 +24,7 @@ const editorConfiguration = {
     }
 };
 
-const Ceditor = () => {
+const CEditor = () => {
     return (
         <>
             <h2>Using CKEditor 5 build in React</h2>
@@ -52,4 +51,4 @@ const Ceditor = () => {
     )
 }
 
-export default Ceditor
+export default CEditor

@@ -5,7 +5,7 @@ const  handleEditorChange = (e) => {
     console.log('Content was updated:', e.target.getContent());
 }
 
-const Teditor = () => {
+const TEditor = () => {
     return (
         <Editor
             initialValue="<p>This is the initial content of the editor</p>"
@@ -27,4 +27,4 @@ const Teditor = () => {
     )
 }
 
-export default Teditor
+export default TEditor
