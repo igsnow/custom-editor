@@ -1,12 +1,12 @@
 import React from 'react';
 import LikeButton from './component/count'
-import EditorDemo from "./component/beditor";
+import BEditor from "./component/beditor";
 
 function App() {
     return (
         <>
             <LikeButton/>
-            <EditorDemo/>
+            <BEditor/>
         </>
     );
 }
