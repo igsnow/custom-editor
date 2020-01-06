@@ -10,7 +10,7 @@ function App() {
             <header>
                 <LikeButton/>
                 <Ceditor/>
-                <Teditor/>
+                {/*<Teditor/>*/}
             </header>
         </div>
     );
