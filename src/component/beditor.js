@@ -2,9 +2,9 @@ import React, {useState} from 'react'
 import BraftEditor from 'braft-editor'
 import 'braft-editor/dist/index.css'
 
-const BEditor = () => {
+const BEditor = (props) => {
     const [state, setState] = useState({
-        editorState: BraftEditor.createEditorState('null')
+        editorState: BraftEditor.createEditorState(props.content)
     })
 
     const handleChange = (editorState) => {

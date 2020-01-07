@@ -3,10 +3,10 @@ import BEditor from "./component/beditor";
 import './App.css'
 
 function App() {
-
+    let editorContent = ''
     return (
         <div className='editor'>
-            <BEditor/>
+            <BEditor content={editorContent}/>
         </div>
     );
 }
