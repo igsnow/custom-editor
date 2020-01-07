@@ -8,8 +8,10 @@ const BEditor = (props) => {
     })
 
     const handleChange = (editorState) => {
-        console.log('content: ', editorState.toHTML());
+        console.log('child: ', editorState.toHTML());
         setState({editorState})
+        // 将富文本内容传递给父组件
+        props.handleContent(editorState.toHTML())
     }
 
     // 上传
