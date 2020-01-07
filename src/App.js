@@ -1,13 +1,13 @@
 import React from 'react';
-import LikeButton from './component/count'
 import BEditor from "./component/beditor";
+import './App.css'
 
 function App() {
+
     return (
-        <>
-            <LikeButton/>
+        <div className='editor'>
             <BEditor/>
-        </>
+        </div>
     );
 }
 
