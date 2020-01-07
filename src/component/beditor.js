@@ -53,13 +53,13 @@ const BEditor = (props) => {
 
     // 限制上传图片等资源文件大小
     const myValidateFn = (file) => {
-        return file.size < 1024 * 1024 * 2
+        return file.size < 1024 * 1024 * props.limit
     }
 
     return (
         <BraftEditor
             value={state.editorState}
-            language={"zh"}
+            language={props.lang}
             controls={[
                 'undo', 'redo', 'separator',
                 'font-size', 'line-height', 'letter-spacing', 'separator',
@@ -70,10 +70,15 @@ const BEditor = (props) => {
                 'media', 'separator',
                 'clear'
             ]}
-            placeholder='请编辑商品详情'
+            placeholder={props.placeholder}
             media={{
                 uploadFn: myUploadFn,
                 validateFn: myValidateFn
+            }}
+            contentStyle={{
+                height: props.height || 'auto',
+                minHeight: props.minHeight || 200,
+                maxHeight: props.maxHeight || 500
             }}
             onChange={handleChange}/>
     )
