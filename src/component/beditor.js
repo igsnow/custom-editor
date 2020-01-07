@@ -16,7 +16,7 @@ const BEditor = (props) => {
 
     // 上传
     const myUploadFn = (param) => {
-        const serverURL = 'http://test.wvcb.qilie.biz/cgi/upload/file/item/image'
+        const serverURL = props.serverURL
         const xhr = new XMLHttpRequest()
         const fd = new FormData()
         const successFn = (response) => {
