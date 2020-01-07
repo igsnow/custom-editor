@@ -20,7 +20,7 @@ const BEditor = (props) => {
         const xhr = new XMLHttpRequest()
         const fd = new FormData()
         const successFn = (response) => {
-            // 服务端返回的上传图片链接，会传入富文本编辑器
+            // 服务端返回的上传图片链接，回传给富文本编辑器
             let resultObj = response.target.response && JSON.parse(response.target.response)
             let uploadUrl = resultObj.data.url
             param.success({
