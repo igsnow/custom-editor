@@ -9,7 +9,7 @@ function App() {
     const minHeight = 200
     const maxHeight = 500
     const limit = 2
-    const lang = 'en'
+    const lang = 'zh'
     const placeholder = '请编辑商品详情...'
     const uploadUrl = 'http://test.wvcb.qilie.biz/cgi/upload/file/item/image'
     const handleContent = (event) => {
